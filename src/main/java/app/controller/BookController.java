@@ -32,4 +32,18 @@ public class BookController {
         return repository.save(newBook);
     }
 
+    /*
+     * Запросы пост для добавления новой книги:
+     * 1. Через консоль
+     * curl -X POST localhost:8080/books -H 'Content-type:application/json' -d '{"author": "Duma", "name": "Monte Cristo"}'
+     *
+     * 2. Через консоль в браузере
+     * fetch('/books', {
+     *              method: 'POST',
+     *              headers: {'Content-type' : 'application/json'},
+     *              body: JSON.stringify({"author": "Duma", "name": "Monte Cristo"})
+     *      })
+     * .then(console.log)
+    */
+
 }
